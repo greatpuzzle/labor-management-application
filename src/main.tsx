@@ -1,5 +1,6 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
+import { BrowserRouter } from "react-router-dom";
 import App from "./App.tsx";
 import "./styles/index.css";
 
@@ -74,7 +75,9 @@ try {
   const root = createRoot(rootElement);
   root.render(
     <ErrorBoundary>
-      <App />
+      <BrowserRouter basename="/labor-management-platform">
+        <App />
+      </BrowserRouter>
     </ErrorBoundary>
   );
   console.log('[main] React app mounted successfully');
