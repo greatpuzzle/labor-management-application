@@ -75,7 +75,7 @@ try {
   const root = createRoot(rootElement);
   root.render(
     <ErrorBoundary>
-      <BrowserRouter basename="/labor-management-platform">
+      <BrowserRouter basename="/labor-management-application">
         <App />
       </BrowserRouter>
     </ErrorBoundary>

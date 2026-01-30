@@ -4,6 +4,7 @@ import tailwindcss from '@tailwindcss/vite'
 import react from '@vitejs/plugin-react'
 
 export default defineConfig({
+  base: "/labor-management-application/",
   plugins: [
     react(),
     tailwindcss(),
@@ -13,7 +14,7 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
-      '@shared': path.resolve(__dirname, '../../packages/shared'),
+      '@shared': path.resolve(__dirname, './packages/shared'),
     },
   },
   server: {
