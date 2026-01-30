@@ -1,5 +1,6 @@
 name: Deploy Mobile to GitHub Pages
 
+# GitHub Pages 배포 워크플로우
 on:
   push:
     branches:
